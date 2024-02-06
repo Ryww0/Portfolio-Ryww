@@ -9,5 +9,11 @@ li {
 
 a {
   text-decoration: none;
+  color: $clr-primary;
+}
+
+body {
+  font-family: $ff-content;
   color: $clr-secondary;
+  background: $clr-primary;
 }
