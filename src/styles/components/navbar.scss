@@ -1,9 +1,11 @@
 header {
   position: fixed;
+  top: 0;
   width: 100%;
 
   nav {
     @include flex(row, space-between);
+    backdrop-filter: blur(4px);
 
     .nav-responsive {
       @include flex(row, space-between);

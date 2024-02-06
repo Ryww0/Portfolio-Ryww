@@ -1,0 +1,47 @@
+.section-content {
+  .skill-list {
+    @include flex(row, space-between, start);
+    padding-top: 3rem;
+
+    &.hard-skills {
+      flex-wrap: wrap;
+
+      .skill-item {
+        @include flex(column);
+        // margin-top: 3rem;
+
+        img {
+          height: 60px;
+        }
+      }
+    }
+
+    &.soft-skills {
+      .skill-item {
+        padding-right: 2rem;
+        min-width: 33%;
+        // max-width: 33%;
+
+        h4 {
+          margin-bottom: 1rem;
+        }
+
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-content {
+    .skill-list {
+      gap: 1rem;
+
+      &.soft-skills {
+        flex-direction: column;
+      }
+    }
+  }
+}
