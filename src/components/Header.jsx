@@ -26,7 +26,7 @@ function Header() {
             <li className="nav-item">compétences</li>
             <li className="nav-item">projets</li>
             <li className="nav-item">contact</li>
-            <li className="nav-item">
+            <li className="nav-item btn btn-primary">
               <a
                 target="_blank"
                 href="https://calendly.com/equipe-3wa/prise-de-contact-entreprise-eleve?utm_content=Laurent%20Chaitas&utm_campaign=recoyeryaro1KsMR1&utm_source=%2033649789050&month=2024-02"

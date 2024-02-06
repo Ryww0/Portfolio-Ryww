@@ -1,0 +1,21 @@
+.section {
+  min-height: 100vh;
+}
+
+.btn {
+  padding: 5px 15px;
+  border-radius: 100px;
+  font-variant: small-caps;
+
+  &:hover {
+    filter: brightness(3);
+  }
+
+  &-primary {
+    background: $clr-secondary;
+    color: $clr-primary;
+  }
+  &-secondary {
+    border: 3px solid $clr-secondary;
+  }
+}

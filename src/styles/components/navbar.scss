@@ -40,13 +40,6 @@ header {
         margin-inline: 1rem;
         cursor: pointer;
 
-        &:last-child {
-          background: $clr-secondary;
-          color: $clr-primary;
-          padding: 5px 15px;
-          border-radius: 100px;
-        }
-
         &:hover {
           transform: scale(1.05);
           filter: brightness(3);
@@ -73,6 +66,8 @@ header {
 
       &.active {
         display: flex !important;
+        background: $clr-primary;
+        width: 100%;
       }
 
       .nav-item {

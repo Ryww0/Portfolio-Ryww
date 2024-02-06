@@ -1,0 +1,48 @@
+#about-section {
+  @include flex;
+  background: url("../../../public/logo_min_perspective.png") no-repeat;
+  background-size: 105%;
+
+  .container {
+    @include flex(row, space-between);
+
+    img {
+      max-height: 300px;
+      border-radius: 25px;
+      box-shadow: 4px 4px 15px $clr-secondary;
+    }
+
+    #about-infos {
+      @include flex(column, space-between, start);
+      padding-left: 2rem;
+    }
+
+    .about-links {
+      margin-top: 2rem;
+      span {
+        margin-right: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about-section {
+    background-size: 200%;
+    background-position-y: 100%;
+
+    .container {
+      flex-direction: column;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    #about-infos {
+      padding: 0 !important;
+    }
+  }
+}
