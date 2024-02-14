@@ -9,7 +9,9 @@ function Header() {
       <header>
         <nav>
           <div className="nav-responsive">
-            <img id="nav-logo" src={rywwLogo} alt="logo ryww" />
+            <a href="#">
+              <img id="nav-logo" src={rywwLogo} alt="logo ryww" />
+            </a>
 
             <div
               className="menu-burger"
@@ -22,9 +24,15 @@ function Header() {
           </div>
 
           <ul className={`nav-menu ${navActive && "active"}`}>
-            <li className="nav-item">à propos</li>
-            <li className="nav-item">compétences</li>
-            <li className="nav-item">projets</li>
+            <li className="nav-item">
+              <a href="#about-section">à propos</a>
+            </li>
+            <li className="nav-item">
+              <a href="#skill-section">compétences</a>
+            </li>
+            <li className="nav-item">
+              <a href="#project-section">projets</a>
+            </li>
             <li className="nav-item">contact</li>
             <li className="nav-item btn btn-primary">
               <a

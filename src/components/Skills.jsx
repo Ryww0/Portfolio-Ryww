@@ -13,7 +13,7 @@ import SoftSkill from "./partials/SoftSkill";
 function Skills() {
   return (
     <>
-      <div className="container">
+      <div className="container" id="skill-section">
         <div className="section">
           <h2>mes compétences</h2>
           <div className="section-content">
