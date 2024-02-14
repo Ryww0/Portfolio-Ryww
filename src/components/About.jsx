@@ -1,5 +1,6 @@
 import React from "react";
 import profilPic from "../assets/presentation_picture.png";
+import Interview from "./partials/Interview";
 
 function About() {
   return (
@@ -20,13 +21,7 @@ function About() {
                 CV
               </a>
 
-              <a
-                className="btn btn-primary"
-                target="_blank"
-                href="https://calendly.com/equipe-3wa/prise-de-contact-entreprise-eleve?utm_content=Laurent%20Chaitas&utm_campaign=recoyeryaro1KsMR1&utm_source=%2033649789050&month=2024-02"
-              >
-                réserver un entretien
-              </a>
+              <Interview />
             </div>
           </div>
         </div>

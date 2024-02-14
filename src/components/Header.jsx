@@ -1,8 +1,21 @@
 import React, { useState } from "react";
 import rywwLogo from "../assets/ryww_logo.png";
+import Interview from "./partials/Interview";
 
 function Header() {
   const [navActive, setNavActive] = useState(false);
+
+  const handleClick = (id) => {
+    const element = document.getElementById(id);
+    const offset = 100;
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = element.getBoundingClientRect().top;
+    const offsetPosition = elementRect - bodyRect - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+    });
+  };
 
   return (
     <>
@@ -25,22 +38,43 @@ function Header() {
 
           <ul className={`nav-menu ${navActive && "active"}`}>
             <li className="nav-item">
-              <a href="#about-section">à propos</a>
-            </li>
-            <li className="nav-item">
-              <a href="#skill-section">compétences</a>
-            </li>
-            <li className="nav-item">
-              <a href="#project-section">projets</a>
-            </li>
-            <li className="nav-item">contact</li>
-            <li className="nav-item btn btn-primary">
               <a
-                target="_blank"
-                href="https://calendly.com/equipe-3wa/prise-de-contact-entreprise-eleve?utm_content=Laurent%20Chaitas&utm_campaign=recoyeryaro1KsMR1&utm_source=%2033649789050&month=2024-02"
+                onClick={() => (
+                  setNavActive(false), handleClick("about-section")
+                )}
               >
-                réserver un entretien
+                à propos
               </a>
+            </li>
+            <li className="nav-item">
+              <a
+                onClick={() => (
+                  setNavActive(false), handleClick("skill-section")
+                )}
+              >
+                compétences
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                onClick={() => (
+                  setNavActive(false), handleClick("project-section")
+                )}
+              >
+                projets
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                onClick={() => (
+                  setNavActive(false), handleClick("contact-section")
+                )}
+              >
+                contact
+              </a>
+            </li>
+            <li className="nav-item ">
+              <Interview />
             </li>
           </ul>
         </nav>
