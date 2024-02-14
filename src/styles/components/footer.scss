@@ -1,9 +1,20 @@
 footer {
+  position: relative;
   @include flex(row, space-between);
-  background: $clr-primary;
-  //   background: red;
-  padding: 15px 10px;
+  border-top: 1px solid $clr-primary;
+  padding: 30px 10px;
   font-size: 0.8rem;
+
+  &::before {
+    @include flex;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 90%;
+    margin-left: 5%;
+    background: $clr-secondary;
+  }
 
   .logo {
     @include flex;
