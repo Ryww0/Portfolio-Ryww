@@ -21,10 +21,10 @@ function Contact() {
     <div className="section container" id="contact-section">
       <h2>Me contacter</h2>
       <p>Cliquer sur l'adresse mail pour la copier</p>
-      <span id="info-copy">{isCopied && "copié dans le press papier !"}</span>
+      <span id="info-copy">{isCopied && "copié dans le presse papier !"}</span>
       <span onClick={copy}>{email}</span>
       <br />
-      <p>Vous pouvez aussi programmer un entretien avec moi:</p>
+      <p>Vous pouvez aussi programmer un entretien avec moi :</p>
       <Interview />
     </div>
   );
