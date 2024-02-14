@@ -9,7 +9,7 @@
     img {
       max-height: 300px;
       border-radius: 25px;
-      box-shadow: 4px 4px 15px $clr-secondary;
+      box-shadow: $shadow;
     }
 
     #about-infos {
@@ -19,7 +19,7 @@
 
     .about-links {
       margin-top: 2rem;
-      span {
+      .btn {
         margin-right: 5px;
         cursor: pointer;
       }

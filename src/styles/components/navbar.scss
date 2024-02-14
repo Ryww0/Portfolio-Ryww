@@ -1,4 +1,5 @@
 header {
+  z-index: 2;
   position: fixed;
   top: 0;
   width: 100%;
@@ -42,7 +43,7 @@ header {
         margin-inline: 1rem;
         cursor: pointer;
 
-        &:hover {
+        &:hover:not(:last-child) {
           transform: scale(1.05);
           filter: brightness(3);
         }

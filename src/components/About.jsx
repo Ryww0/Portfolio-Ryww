@@ -16,10 +16,17 @@ function About() {
               d’une formation de Concepteur Développeur d’Applications.
             </p>
             <div className="about-links">
-              <span className="btn btn-secondary">CV</span>
-              <span className="btn btn-primary">
-                <a href="">réserver un entretien</a>
-              </span>
+              <a className="btn btn-secondary" target="_blank" href="/cv.pdf">
+                CV
+              </a>
+
+              <a
+                className="btn btn-primary"
+                target="_blank"
+                href="https://calendly.com/equipe-3wa/prise-de-contact-entreprise-eleve?utm_content=Laurent%20Chaitas&utm_campaign=recoyeryaro1KsMR1&utm_source=%2033649789050&month=2024-02"
+              >
+                réserver un entretien
+              </a>
             </div>
           </div>
         </div>

@@ -1,5 +1,9 @@
 .section {
   min-height: 100vh;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
 }
 
 .btn {
@@ -14,8 +18,15 @@
   &-primary {
     background: $clr-secondary;
     color: $clr-primary;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
+
   &-secondary {
     border: 3px solid $clr-secondary;
+    color: $clr-secondary;
+    // background: $clr-secondary;
   }
 }

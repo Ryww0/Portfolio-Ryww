@@ -1,7 +1,7 @@
 .section-content {
   .skill-list {
     @include flex(row, space-between, start);
-    padding-top: 3rem;
+    // padding-top: 3rem;
 
     &.hard-skills {
       flex-wrap: wrap;
@@ -13,10 +13,16 @@
         img {
           height: 60px;
         }
+
+        span {
+          font-variant: small-caps;
+        }
       }
     }
 
     &.soft-skills {
+      margin-top: 3rem;
+
       .skill-item {
         padding-right: 2rem;
         min-width: 33%;
@@ -41,6 +47,10 @@
 
       &.soft-skills {
         flex-direction: column;
+      }
+
+      h4 {
+        text-align: center;
       }
     }
   }

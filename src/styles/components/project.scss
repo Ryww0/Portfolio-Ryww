@@ -1,0 +1,101 @@
+#project-section {
+  .project-list {
+    @include flex(row, space-between);
+    flex-wrap: wrap;
+    gap: 5rem;
+    color: $clr-primary;
+
+    &::after {
+      content: "";
+      flex: auto;
+    }
+
+    .project-item {
+      position: relative;
+      max-width: 275px;
+      min-height: 360px;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      border-radius: 25px;
+      box-shadow: $shadow;
+
+      .filter {
+        backdrop-filter: blur(2px);
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 101%;
+        background: linear-gradient(#1f1f1fa1, #1f1f1f1b);
+        border-radius: 25px;
+      }
+
+      .content {
+        z-index: 1;
+        position: relative;
+        padding: 1rem;
+        min-height: 360px;
+
+        &-header {
+          @include flex(row, space-between, start);
+          // background: red;
+
+          svg {
+            width: auto;
+            height: 2rem;
+            color: $clr-primary;
+          }
+        }
+
+        span {
+          font-weight: 200;
+          font-size: 0.8rem;
+        }
+
+        p {
+          text-shadow: 4px 4px 4px $clr-secondary;
+          margin-top: 2rem;
+          font-size: 0.8rem;
+        }
+      }
+
+      .tech-list {
+        @include flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 0;
+        gap: 0.3rem;
+        padding: 1rem;
+        width: 90%;
+
+        span {
+          position: absolute;
+          top: 0;
+          height: 0.3px;
+          outline: 0.5px solid $clr-primary;
+          width: 100%;
+          opacity: 0.6;
+          box-shadow: 0px 2px 4px black;
+        }
+
+        li {
+          border-radius: 100px;
+          background: $clr-primary;
+          color: $clr-secondary;
+          padding: 5px 15px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #project-section {
+    margin-top: 4rem;
+    .project-list {
+      flex-direction: column;
+    }
+  }
+}

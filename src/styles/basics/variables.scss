@@ -1,7 +1,16 @@
 // colors
 $clr-primary: #f5f5f5;
 $clr-secondary: #1f1f1f;
+$clr-gradient: linear-gradient(
+  90deg,
+  rgba(237, 161, 90, 1) 0%,
+  rgba(203, 255, 54, 1) 50%,
+  rgba(130, 207, 125, 1) 100%
+);
 
 // font family
 $ff-content: "Montserrat", sans-serif;
 $ff-title: "Arsenica Trial", sans-serif;
+
+// box shadow
+$shadow: 4px 4px 15px $clr-secondary;
